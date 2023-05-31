@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background: black;
+}
+
+@font-face {
+  font-family: 'IBMPlexSansHebrew-Bold';
+  src: local('IBMPlexSansHebrew-Bold'), url(./assets/IBM_Plex_Sans_Hebrew/IBMPlexSansHebrew-Bold.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Opensans-Light';
+  font-style: normal;
+  src: local('Opensans-Light'), url(./fonts/OpenSans-Light.ttf) format('truetype');
+}
