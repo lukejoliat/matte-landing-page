@@ -40,8 +40,8 @@ const Hero = () => {
                     </motion.div>
                 </motion.div>
             </motion.div>
-            <motion.div initial={{ opacity: 0, transform: 'rotateX(-90deg)' }} animate={{ opacity: 1, transform: 'rotateX(0deg)', transition: { delay: 1 } }} className='relative h-[587px] my-12 flex items-center justify-center origin-center'>
-                <img className='absolute top-0 z-20' src={laptop} alt="laptop" />
+            <motion.div initial={{ opacity: 0, transform: 'rotateX(-90deg)' }} animate={{ opacity: 1, transform: 'rotateX(0deg)', transition: { delay: 1 } }} className='relative my-12 flex items-center justify-center origin-center'>
+                <img className=' top-0 z-20' src={laptop} alt="laptop" />
                 <img className='absolute top-0 z-10 pt-[3%] px-[10%]' src={screen} alt="screen" />
                 <motion.img className='absolute top-0 z-30 ml-[.25%]' style={{ paddingTop: contentTopP, paddingLeft: contentSideP, paddingRight: contentSideP }} src={contents} alt="content" />
                 <motion.div style={{ scale: bgScale, boxShadow: `0px 0px 250px 250px #ffffff4d` }} className='absolute h-40 w-40 rounded-full'></motion.div>

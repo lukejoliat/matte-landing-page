@@ -1,12 +1,16 @@
 import { motion } from 'framer-motion';
 import './App.css';
+import { Footer } from './Footer';
+import { Header } from './Header';
 import { Hero } from './Hero';
 import arrowUp from './assets/arrow-up.svg';
 import blueBgBar from './assets/blue-bg-bar.jpeg';
 import blueBgContent from './assets/blue-bg-content.svg';
 import blueBg from './assets/blue-bg.webp';
+import circle from './assets/circle.png';
 import compass from './assets/compass.svg';
 import eye from './assets/eye.svg';
+import m from './assets/m.svg';
 import partners1 from './assets/partners-1.svg';
 import partners2 from './assets/partners-2.svg';
 import partners3 from './assets/partners-3.svg';
@@ -18,11 +22,6 @@ import phone from './assets/phone.png';
 import rightArrow from './assets/right-arrow.svg';
 import stuff from './assets/stuff.svg';
 import twitter from './assets/twitter.svg';
-import { Header } from './Header';
-import { Footer } from './Footer';
-import { Icon } from './Icon';
-import circle from './assets/circle.png';
-import m from './assets/m.svg';
 
 
 function App() {
@@ -35,8 +34,8 @@ function App() {
         <Hero />
 
         <section className='bg-black p-24 mt-40'>
-          <div className='max-w-7xl m-auto grid grid-cols-3 gap-6'>
-            <div className='rounded-2xl bg-[#181818] h-full overflow-hidden'>
+          <div className='max-w-7xl m-auto grid grid-cols-1 md:grid-cols-3 gap-6'>
+            <div className='h-full rounded-2xl bg-[#181818] overflow-hidden'>
               <div className='p-6'>
                 <h1 className='text-5xl my-4 font-heading'>Organize any tasks. Prioritize with ease</h1>
                 <p className='text-gray'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris id nunc odio. Aliquam et tellus urna. Phasellus eget
@@ -46,7 +45,7 @@ function App() {
             </div>
             <div className='h-full rounded-2xl bg-[#181818] relative overflow-hidden flex items-center justify-center'>
               <motion.img src={phoneScreen} className='absolute h-full w-full' alt="" initial={{ opacity: 0 }} whileInView={{ opacity: 1, transition: { delay: .60, duration: .5 } }} />
-              <motion.div className='absolute z-10 w-2/3 overflow-hidden' initial={{ scale: 2, opacity: 0 }} whileInView={{ opacity: 1, scale: 1, transition: { delay: .25, duration: .5 } }}>
+              <motion.div className='relative z-10 w-2/3 overflow-hidden' initial={{ scale: 2, opacity: 0 }} whileInView={{ opacity: 1, scale: 1, transition: { delay: .25, duration: .5 } }}>
                 <img src={phone} alt="phone" />
                 <img src={phoneContent} className='absolute top-0 left-0 p-[3%] z-[-10] object-cover rounded-[10%]' alt="" />
               </motion.div>
@@ -93,7 +92,7 @@ function App() {
             <p className='max-w-md text-center m-auto my-12 text-gray'>
               A comprehensive solution for organizing and prioritizing your tasks, to help you boost your productivity and achieve your goals with ease.
             </p>
-            <div className='grid grid-cols-1 sm:grid-cols-2 gap-10 md:gap-40 md:p-10'>
+            <div className='grid grid-cols-1 md:grid-cols-2 gap-10 lg:gap-40 lg:p-10'>
               <div className='rounded-xl relative overflow-hidden'>
                 <img className='object-fit absolute z-10 h-full w-full' src={blueBg} alt="blue bg" />
                 <motion.div initial={{ x: 0, opacity: 0 }} whileInView={{ x: 70, opacity: 1, transition: { duration: .5 } }} className='max-w-[300px] left-[-20%] relative z-20 top-10 rounded-2xl overflow-hidden'>
