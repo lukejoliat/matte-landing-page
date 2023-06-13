@@ -10,13 +10,37 @@ const Header = () => {
                 <div className="flex items-center">
                     <img src={logo} alt="" />
                 </div>
-                <nav><ul className='flex justfy-between'><li className='mx-4'>Features</li><li className='mx-4'>Company</li><li className='mx-4'>Blog</li><li className='mx-4'>Shop</li></ul></nav>
+                <nav className='flex-1 max-w-lg m-auto justify-around flex'>
+                    <ul className='hidden md:flex'>
+                        <MenuItem>Features</MenuItem>
+                        <MenuItem>Company</MenuItem>
+                        <MenuItem>Blog</MenuItem>
+                        <MenuItem>Shop</MenuItem>
+                    </ul>
+                </nav>
                 <div className='flex'>
                     <img src={shoppingCart} alt="" />
                     <button className='bg-white text-black rounded-md p-2 mx-4 px-4'>Sign In</button>
                 </div>
+                <div className='flex items-center flex-col md:hidden h-8 w-8 cursor-pointer'>
+                    <HamburgerItem />
+                    <HamburgerItem />
+                    <HamburgerItem />
+                </div>
             </div>
         </motion.header>
+    )
+}
+
+const HamburgerItem = () => {
+    return (
+        <div className='h-1 w-full bg-white my-1 rounded-lg'></div>
+    )
+}
+
+const MenuItem = ({ children }) => {
+    return (
+        <li className='mx-4'>{children}</li>
     )
 }
 
