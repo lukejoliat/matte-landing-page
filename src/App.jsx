@@ -22,6 +22,7 @@ function App() {
         <Header />
         <Hero />
         <Sponsors />
+
         <section className='bg-charcoal p-20'>
           <div className='max-w-7xl m-auto'>
             <h1 className='text-center font-heading text-5xl'>Simplify task management. <br /> Enhance focus.</h1>

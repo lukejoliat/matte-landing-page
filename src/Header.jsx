@@ -5,8 +5,8 @@ import logo from './assets/logo.svg';
 
 const Header = () => {
     return (
-        <motion.header initial={{ opacity: 0 }} animate={{ opacity: 1, transition: { delay: 1 } }} className='w-full border-b-white/25 border-b-[1px] backdrop-blur-md fixed top-0 z-40'>
-            <div className="max-w-5xl m-auto flex justify-between py-4 items-center">
+        <motion.header initial={{ opacity: 0 }} animate={{ opacity: 1, transition: { delay: 1 } }} className='w-full p-4 border-b-white/25 border-b-[1px] backdrop-blur-md fixed top-0 z-40'>
+            <div className="max-w-7xl m-auto flex justify-between  items-center">
                 <div className="flex items-center">
                     <img src={logo} alt="" />
                 </div>
