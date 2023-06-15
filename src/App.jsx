@@ -23,9 +23,10 @@ function App() {
         <Hero />
         <Sponsors />
 
-        <section className='bg-charcoal p-20'>
+        <section className='bg-charcoal p-4 sm:p-20'>
           <div className='max-w-7xl m-auto'>
-            <h1 className='text-center font-heading text-5xl'>Simplify task management. <br /> Enhance focus.</h1>
+            <h1 className='text-center font-heading text-3xl sm:text-5xl'>Simplify task management.</h1>
+            <h1 className='text-center font-heading text-3xl sm:text-5xl'>Enhance focus.</h1>
             <p className='max-w-md text-center m-auto my-12 text-gray'>
               A comprehensive solution for organizing and prioritizing your tasks, to help you boost your productivity and achieve your goals with ease.
             </p>
@@ -47,7 +48,7 @@ function App() {
           </div>
         </section>
 
-        <section className='bg-black p-20'>
+        <section className='bg-black p-4 sm:p-20'>
           <div className="max-w-7xl m-auto">
             <h1 className='font-heading text-5xl text-center'>What are you waiting for?</h1>
             <p className='text-center text-gray mt-4'>Start simplifying your tasks today and sign up now!</p>

@@ -15,7 +15,7 @@ import { motion } from 'framer-motion';
 
 const Sponsors = () => {
     return (
-        <section className='bg-black p-24 mt-40'>
+        <section className='bg-black p-4 sm:p-24 mt-40'>
             <div className='max-w-7xl m-auto grid grid-cols-1 md:grid-cols-3 gap-6'>
                 <div className='h-full rounded-2xl bg-[#181818] overflow-hidden'>
                     <div className='p-6'>
@@ -55,7 +55,7 @@ const Sponsors = () => {
                 </div>
             </div>
             <div className='mt-20'>
-                <h1 className='font-heading text-center text-5xl'>Our sponsors & partners</h1>
+                <h1 className='font-heading text-center text-3xl sm:text-5xl'>Our sponsors & partners</h1>
                 <div className='flex m-auto max-w-4xl w-full justify-between mt-12'>
                     <div>
                         <img src={partners1} alt="partners 1" />
@@ -68,6 +68,12 @@ const Sponsors = () => {
             </div>
         </section>
     )
+}
+
+const Card = ({ children }) => {
+    <div className='h-full rounded-2xl bg-[#181818] overflow-hidden'>
+
+    </div>
 }
 
 export { Sponsors }

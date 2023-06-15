@@ -3,36 +3,42 @@ import logo from './assets/logo.svg';
 const Footer = () => {
     return (
         <footer className='bg-black p-12'>
-            <div className='max-w-7xl m-auto flex'>
+            <div className='max-w-7xl m-auto flex flex-col sm:flex-row'>
                 <div className='max-w-sm'>
                     <img src={logo} alt="" />
                     <p className='text-gray my-4'>Aliquam et tellus urna. Phasellus egetadipiscing elit. Mauris id nunc odio. Aliquam et tellus urna. Phasellus eget</p>
                 </div>
-                <div className='flex flex-1 justify-end'>
-                    <ul className='mx-4'>
+                <div className='flex flex-1 justify-end flex-col sm:flex-row gap-4'>
+                    <ul>
                         <li>COMPANY</li>
-                        <li className='text-gray my-2'>Features</li>
-                        <li className='text-gray my-2'>Company</li>
-                        <li className='text-gray my-2'>Blog</li>
-                        <li className='text-gray my-2'>Shop</li>
+                        <FooterItem>Features</FooterItem>
+                        <FooterItem>Company</FooterItem>
+                        <FooterItem>Blog</FooterItem>
+                        <FooterItem>Shop</FooterItem>
                     </ul>
-                    <ul className='mx-4'>
+                    <ul>
                         <li>SOCIAL MEDIA</li>
-                        <li className='text-gray my-2'>Features</li>
-                        <li className='text-gray my-2'>Company</li>
-                        <li className='text-gray my-2'>Blog</li>
-                        <li className='text-gray my-2'>Shop</li>
+                        <FooterItem>Features</FooterItem>
+                        <FooterItem>Company</FooterItem>
+                        <FooterItem>Blog</FooterItem>
+                        <FooterItem>Shop</FooterItem>
                     </ul>
-                    <ul className='mx-4'>
+                    <ul>
                         <li>WEBFLOW STUFF</li>
-                        <li className='text-gray my-2'>Features</li>
-                        <li className='text-gray my-2'>Company</li>
-                        <li className='text-gray my-2'>Blog</li>
-                        <li className='text-gray my-2'>Shop</li>
+                        <FooterItem>Features</FooterItem>
+                        <FooterItem>Company</FooterItem>
+                        <FooterItem>Blog</FooterItem>
+                        <FooterItem>Shop</FooterItem>
                     </ul>
                 </div>
             </div>
         </footer>
+    )
+}
+
+const FooterItem = ({ children }) => {
+    return (
+        <li className='text-gray my-2'>{children}</li>
     )
 }
 
